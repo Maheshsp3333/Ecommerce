@@ -1,2 +1,0 @@
-# Ecommerce
-HTML CSS

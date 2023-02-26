@@ -1,0 +1,568 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Changa:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d7cbcb;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom right, #fddff1, #e2f2f4);
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    color: black;
+    font-size: small;
+    font-weight: 600;
+    background-color: transparent;
+    padding: 8px 24px;
+    padding-inline: 8rem;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    /* text-transform: uppercase; */
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+.fafa-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 16rem;
+}
+
+.fafa-item li img {
+    width: 100%;
+    margin-top: -1.1rem;
+
+}
+.section-1{
+    padding: 22px 66px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+   
+
+
+}
+
+.heading-para {
+    padding: 4rem 2rem;
+    margin-top: 10rem;
+    flex:1
+
+}
+
+.heading-para h1 {
+    color: #677da8;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+
+.heading-para p {
+    color: #677da8;
+    font-weight: 400;
+    margin-top: 24px;
+    line-height: 32px;
+}
+
+.shoes-btn {
+    border: 1px solid #ffffff;
+    color: #6c82ab;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 12px;
+    background-color: #ffffff;
+    margin-top: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 2px gainsboro;
+
+}
+
+.shoes {
+    height: 100%;
+    width: 98%;
+
+}
+
+.ring-border {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.image-div {
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    flex: 1;
+
+
+}
+
+.shadow {
+    width: 100%;
+    margin-top: -10rem;
+    /* margin-left: 45px; */
+}
+.discount {
+    border: 1px solid #d1bad1;
+    background-color: #f0f8f9;
+    padding: 13px 19px;
+    width: 40%;
+    color: #7186ae;
+    border-radius: 16px;
+    box-shadow: 1px 1px 1px 1px #d1bad1;
+    margin-top: -69px;
+    margin-left: 19rem;
+}
+/* .discount p{
+    font-weight: 600;
+} */
+.arrow-img{
+    height: 100%;
+    width: 59%;
+    margin-left: 77px;
+    margin-top: -65px;
+}
+.star h6{
+    margin-top: 8px;
+    color: #677da8;
+
+}
+.star{
+    margin-top: -114px;
+    margin-left: 340px;
+}
+.checked {
+    color: #ab1f33;
+  }
+  /* ------------Section 2 Css------------------------- */
+ 
+  .heading-section2{
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #677da8;
+    padding-left: 6rem;
+  }
+  .card {
+    /* width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin: 10px; */
+    line-height: 1.2rem;
+    position: relative;
+  }
+  .heart-shape{
+    padding: 6px;
+    position: absolute;
+    border-radius: 50%;
+    right: 8px;
+    top: 8px;
+    background-image: linear-gradient(#dd63b8, #7cf9fc);
+  }
+  
+  
+  .card img {
+    width: 100%;
+    height: 12rem;
+    padding: 16px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #eac7dd, #c8e5e8);
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 2px 2px #c8e5e8;
+  }
+  
+  .card h5{
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+    margin-top: inherit;
+    color: #535052;
+  }
+  
+  .card p.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #232323;
+  }
+  .checked1 {
+    color: #ab1f33;
+    margin-right:0.4rem;
+  }
+  
+  .card button {
+    background-color: rgba(255,255,255,255);
+    color: #9eacc7;
+    padding: 8px 8px;
+    border: none;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  .card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 28px;
+    padding: 4rem;
+  }
+
+
+
+  /* -------------------------------------------------------------------------------------- */
+                             /* E Comerce LAPTOP SIZE */
+  /* --------------------------------------------------------------------------------------- */
+
+  @media only screen   
+and (min-device-width : 768px)   
+and (max-device-width : 1024px)  
+{ 
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: relative;
+        color: black;
+        font-size: small;
+        font-weight: 600;
+        background-color: transparent;
+        padding: 8px 24px;
+        padding-inline: 4rem;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .menu {
+        display: flex;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .menu li {
+        padding-left: 30px;
+    }
+    
+    .menu li a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--color1);
+        text-align: center;
+        transition: 0.15s ease-in-out;
+        position: relative;
+        /* text-transform: uppercase; */
+    }
+    
+    .menu li a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--color1);
+        transition: 0.15s ease-in-out;
+    }
+    
+    .menu li a:hover:after {
+        width: 100%;
+    }
+    
+    .open-menu,
+    .close-menu {
+        position: absolute;
+        color: var(--color1);
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: none;
+    }
+    
+    .open-menu {
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+    
+    .close-menu {
+        top: 20px;
+        right: 20px;
+    }
+    
+    #check {
+        display: none;
+    }
+    
+    .fafa-item {
+        display: flex;
+        flex-direction: row;
+        margin-left: 16rem;
+    }
+    
+    .fafa-item li img {
+        width: 100%;
+        margin-top: -1.1rem;
+    
+    }
+    .section-1{
+        padding: 22px 66px;
+    }
+    
+    .section-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+       
+    
+    
+    }
+    
+    .heading-para {
+        padding: 1rem 1rem;
+    margin-top: 2rem;
+    flex: 1;
+    
+    }
+    
+    .heading-para h1 {
+        color: #677da8;
+        font-size: 36px;
+        font-weight: 900;
+    
+    }
+    
+    .heading-para p {
+        color: #677da8;
+        font-weight: 400;
+        margin-top: 24px;
+        line-height: 32px;
+    }
+    
+    .shoes-btn {
+        border: 1px solid #ffffff;
+        color: #6c82ab;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 8px 12px;
+        background-color: #ffffff;
+        margin-top: 32px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px 2px gainsboro;
+    
+    }
+    
+    .shoes {
+        height: 90%;
+        width: 98%;
+    
+    }
+    
+    .ring-border {
+        position: absolute;
+        height: 90%;
+        width: 100%;
+    }
+    
+    .image-div {
+        position: relative;
+        margin-top: 2rem;
+        margin-left: 10rem;
+        flex: 1;
+    
+    
+    }
+    
+    .shadow {
+        width: 100%;
+        margin-top: -10rem;
+        /* margin-left: 45px; */
+    }
+    .discount {
+        border: 1px solid #d1bad1;
+        background-color: #f0f8f9;
+        padding: 13px 19px;
+        display: none;
+        width: 40%;
+        color: #7186ae;
+        border-radius: 16px;
+        box-shadow: 1px 1px 1px 1px #d1bad1;
+        margin-top: -69px;
+        margin-left: 19rem;
+    }
+    /* .discount p{
+        font-weight: 600;
+    } */
+    .arrow-img{
+        height: 100%;
+        width: 45%;
+        margin-left: 77px;
+        margin-top: -41px;
+    }
+    .star h6{
+        margin-top: 8px;
+        color: #677da8;
+    
+    }
+    .star{
+        margin-top: -83px;
+        margin-left: 240px;
+    }
+    .checked {
+        color: #ab1f33;
+      }
+      /* ------------Section 2 Css------------------------- */
+     
+      .heading-section2{
+        font-size: 2.3rem;
+        font-weight: 800;
+        color: #677da8;
+        padding-left: 6rem;
+      }
+      .card {
+        /* width: 300px;
+        height: 400px;
+        padding: 10px;
+        margin: 10px; */
+        line-height: 1.8rem;
+        position: relative;
+      }
+      .card img {
+        width: 100%;
+        height: 11rem;
+        padding: 16px;
+        border: 2px solid;
+        border-image: linear-gradient(to right, #eac7dd, #c8e5e8);
+        object-fit: cover;
+        border-radius: 14px;
+        margin-bottom: 10px;
+        box-shadow: 1px 1px 2px 2px #c8e5e8;
+      }
+      
+      .card h5{
+        font-size: 1.0rem;
+        margin-bottom: 10px;
+        margin-top: inherit;
+        color: #535052;
+      }
+      
+      .card p.price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #232323;
+      }
+      .checked1 {
+        color: #ab1f33;
+        margin-right:0.4rem;
+      }
+      
+      .card button {
+        background-color: rgba(255,255,255,255);
+        color: #9eacc7;
+        padding: 8px 8px;
+        border: none;
+        font-size: medium;
+        font-weight: 700;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 1rem;
+      }
+      .card-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        gap: 28px;
+        padding: 4rem;
+      }
+    
+
+
+
+}  

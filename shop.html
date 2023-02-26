@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/shop.css">
+    <link rel="stylesheet" href="/CSS/shopmobile.css">
+    <link rel="stylesheet" href="/CSS/ShopTablet.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Shop Now</title>
+</head>
+<body>
+        <!--------------------- Navbar Start ------------------------------------------>
+    <nav>
+        <ul class="nav-bar">
+            <i class="fa-solid fa-bars fa-lg circle1" ></i>
+          <li class="logo">
+            <h2 style="color: #546485; padding-left: 20px;">Constructor</h2>
+          </li>
+          <input type="checkbox" id="check" />
+          <span class="menu tab-menu" >
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#gallery">About Us</a></li>
+            <li><a href="#shop">News</a></li>
+            <li><a href="#contact">User Policy</a></li>
+            <li><a href="#contact">Contacts</a></li>
+            <li><a href="#contact"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+          </span>
+            <div class="fafa-item">
+              <li><i class="fa fa-search fa-lg circle1" aria-hidden="true"></i></li>
+              <li style="display: flex; flex-direction: row; align-items: center;"><i class="fa-solid fa-user fa-lg circle1"></i>
+                <h6 class="fafa-itemh6" style="font-size: 0.8rem; padding-left: 0.5rem;">Claston Santos</h6>
+              </li>
+              <li>
+                <i class="fa-regular fa-bell fa-lg circle1"></i>
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-xmark fa-lg circle1"></i>
+              </li>
+
+            </div>
+          </span>
+          <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+      </nav>
+
+        <!------------------------------ Navbar End------------------------------ -->
+      
+        <!-- ------------------------ Navbar For Mobile ------------------------- -->
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+           
+            <span></span>
+            <span></span>
+            <span></span>
+           
+
+          
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Info</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+              <a href="#"><li><i class="fa-solid fa-user fa-lg circle1"></i></li></a>
+              
+            </ul>
+          </div>
+        </nav>
+        
+        
+
+        <!-- ------------------------ Navbar For Mobile End ------------------------- -->
+
+        <!----------------------- Products Navbar-1 Sections Start --------------- -->
+
+      <section class="section-3">
+        <div class="section3-container">
+            <div class="navbar-div1">
+                    <ul class="nav-bar1">
+                        
+                      <li style="display: flex; gap: 1rem; align-items: center;"><i class="fa fa-shopping-basket fa-2x" aria-hidden="true" style="border: 1px solid transparent;
+                        padding: 11px 8px;
+                        background-color: #ffffff;
+                        border-radius: 4px;"></i>
+                        <h2 style="color: #546485;" class="products-heading">Products</h2>
+                      </li>
+                      <input type="checkbox" id="check" />
+                      <span class="menu1">
+                        <li><a class="active" href="#">Active</a></li>
+                        <li><a href="#gallery">Draft</a></li>
+                        <li><a href="#shop">Assembly</a></li>
+<!-- --------------------------------------------------------------------- -->
+                        <div class="dropdown">
+                          <button class="dropbtn">Active &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                          <div class="dropdown-content">
+                            <a href="#">Active</a>
+                            <a href="#">Draft</a>
+                            <a href="#">Assembly</a>
+                          </div>
+                        </div>
+<!-- ------------------------------------------------------------------------------ -->
+                        <div class="fafa-item2">
+                            <p ><i class="fa-sharp fa-solid fa-circle-plus fa-lg" style="opacity: 0.8;"></i><h5  class="Add-product-font">Add Product</h5></p>
+            
+                        </div>
+                      </span>
+                      <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                    </ul>
+            </div>
+
+             <!----------------------- Products Navbar-1 Sections End --------------- -->
+
+              <!----------------------- Products Navbar-2 Sections Start ------------ -->
+
+            <div class="navbar-div2">
+                <ul class="nav-bar2">
+                    
+                  <li class="fa-regular fa-circle-check fa-lg" style="padding-left: 2.3rem;">
+                   <h4 class="select-all-mobile" style="color: #546485; padding-left: 1.5rem;">Select All</h4>
+                  </li>
+                  <input type="checkbox" id="check" />
+                  <span class="menu2">
+                    <table>
+                    <tr>
+                        <li class="fa fa-filter" aria-hidden="true" ><button>Filters</button></li>
+                       <li class="fa fa-search" aria-hidden="true"><button>Search</button></li>
+                        <li class="fa-solid fa-pen"><button>Edit</button></li>
+                        <li class="fa-sharp fa-solid fa-trash"><button>Delete</button></li>
+                      </tr>
+                    </table>
+                    <div class="fafa-item3">
+                        <li ><i  class="fa fa-align-justify fa-lg" aria-hidden="true"></i></li>
+                       <li ><i class="fa fa-th fa-lg" aria-hidden="true"></i></li>
+        
+                    </div>
+                  </span>
+                  <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+                </ul>
+        </div>
+         <!----------------------- Products Navbar-2 Sections End --------------- -->
+
+        <!------------------------- All Categories Products Start ---------------------- -->
+
+        <div class="section3-container2">
+          <div class="row-card">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" checked id="checkbox1" />
+                <label for="checkbox1"></label>
+              </div>
+            </div>
+            <img src="/Images/product002.png" alt="Product Image">
+            <h4>Apple Air Pods 2</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox2" />
+                <label for="checkbox2"></label>
+              </div>
+            </div>
+            <img src="/Images/product003.png" alt="Product Image">
+            <h4>Samsung Smart Watch</h4>
+            <p class="price">$600</p>
+          </div>
+        
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox3" />
+                <label for="checkbox3"></label>
+              </div>
+            </div>
+            <img src="/Images/product004.png" alt="Product Image">
+            <h4>Apple Monitor Pro</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox4" />
+                <label for="checkbox4"></label>
+              </div>
+            </div>
+            <img src="/Images/product005.png" alt="Product Image">
+            <h4>Apple Watch Series 4</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+        <div class="row-card">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox5" />
+                <label for="checkbox5"></label>
+              </div>
+            </div>
+            <img src="/Images/product006.png" alt="Product Image">
+            <h4>Google Pixel 4 XL</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox6" />
+                <label for="checkbox6"></label>
+              </div>
+            </div>
+            <img src="/Images/product007.png" alt="Product Image">
+            <h4>Amazon Smart Speaker</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox7" />
+                <label for="checkbox7"></label>
+              </div>
+            </div>
+            <img src="/Images/product008.png" alt="Product Image">
+            <h4>Apple Macbook Pro 16</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox8" />
+                <label for="checkbox8"></label>
+              </div>
+            </div>
+            <img src="/Images/product009.png" alt="Product Image">
+            <h4>Apple iPad 10.2 </h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+        <div class="row-card">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox9" />
+                <label for="checkbox9"></label>
+              </div>
+            </div>
+            <img src="/Images/product010.png" alt="Product Image">
+            <h4>Microsoft Surface Book</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox10" />
+                <label for="checkbox10"></label>
+              </div>
+            </div>
+            <img src="/Images/product011.png" alt="Product Image">
+            <h4>Google Nest</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox11" />
+                <label for="checkbox11"></label>
+              </div>
+            </div>
+            <img src="/Images/product012.png" alt="Product Image">
+            <h4>Apple iMac Pro</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox12" />
+                <label for="checkbox12"></label>
+              </div>
+            </div>
+            <img src="/Images/product013.png" alt="Product Image">
+            <h4>Samsung Smart Watch</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+
+        <!------------------------     TABLET SIZE START    --------------------- -->
+
+        <div class="row-tab">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" checked id="checkbox13" />
+                <label for="checkbox13"></label>
+              </div>
+            </div>
+            <img src="/Images/product002.png" alt="Product Image">
+            <h4>Apple Air Pods 2</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox14" />
+                <label for="checkbox14"></label>
+              </div>
+            </div>
+            <img src="/Images/product003.png" alt="Product Image">
+            <h4>Samsung Smart Watch</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox15" />
+                <label for="checkbox15"></label>
+              </div>
+            </div>
+            <img src="/Images/product004.png" alt="Product Image">
+            <h4>Apple Monitor Pro</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox16" />
+                <label for="checkbox16"></label>
+              </div>
+            </div>
+            <img src="/Images/product005.png" alt="Product Image">
+            <h4>Apple Watch Series 4</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" checked id="checkbox13" />
+                <label for="checkbox13"></label>
+              </div>
+            </div>
+            <img src="/Images/product006.png" alt="Product Image">
+            <h4>Google Pixel 4 XL</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox14" />
+                <label for="checkbox14"></label>
+              </div>
+            </div>
+            <img src="/Images/product007.png" alt="Product Image">
+            <h4>Amazon Smart Speaker</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox15" />
+                <label for="checkbox15"></label>
+              </div>
+            </div>
+            <img src="/Images/product008.png" alt="Product Image">
+            <h4>Apple MacBook Pro 16</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox16" />
+                <label for="checkbox16"></label>
+              </div>
+            </div>
+            <img src="/Images/product009.png" alt="Product Image">
+            <h4>Apple iPad 10.2</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" checked id="checkbox13" />
+                <label for="checkbox13"></label>
+              </div>
+            </div>
+            <img src="/Images/product010.png" alt="Product Image">
+            <h4>Microsoft Surface Book</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox14" />
+                <label for="checkbox14"></label>
+              </div>
+            </div>
+            <img src="/Images/product011.png" alt="Product Image">
+            <h4>Google Nest</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+        <div class="row-tab">
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox"  id="checkbox15" />
+                <label for="checkbox15"></label>
+              </div>
+            </div>
+            <img src="/Images/product012.png" alt="Product Image">
+            <h4>Apple iMac Pro</h4>
+            <p class="price">$600</p>
+          </div>
+          <div class="product-card">
+            <div class="container">
+              <div class="round">
+                <input type="checkbox" id="checkbox16" />
+                <label for="checkbox16"></label>
+              </div>
+            </div>
+            <img src="/Images/product013.png" alt="Product Image">
+            <h4>Samsung Smart Watch</h4>
+            <p class="price">$600</p>
+          </div>
+        </div>
+       
+        
+        <!----------------------------- Tablet Size End ----------------------------- -->
+
+        <div class="more-item-btn">
+          <button>Load More</button>
+        </div>
+        </div>
+           <!---------------------- All Categories Product End------------------------ -->
+
+        </div>
+      </section>
+
+      <script src="/JS/shop.js"></script>
+</body>
+</html>
