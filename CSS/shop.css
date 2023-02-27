@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -599,6 +600,8 @@ body{
     border: 1px solid #cbd1dd;
     border-radius: 20px;
     margin-top: 2rem;
+    font-weight: 700;
+    color: #7e90b4;
     padding: 6px;
     text-align: center;
 }
@@ -606,6 +609,8 @@ body{
     border: 1px solid #cbd1dd;
     border-radius: 20px;
     padding: 6px;
+    color: #7e90b4;
+    font-weight: 700;
     text-align: center;
     margin-top: 23px;
 }
