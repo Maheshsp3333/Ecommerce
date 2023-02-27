@@ -631,4 +631,18 @@
 .row-tab{
     display: none;
 }
+.side-bar-section-3{
+  padding-right: 2rem;
+  border-right: 1px solid #cbd1dd;
+  display: none;
+
+}
+.border-rightside {
+  border-left: 1px solid #cbd1dd;
+  display: none;
+}
+.right-left-adjust {
+  display: block;
+  padding-inline: 1px;
+}
   }
