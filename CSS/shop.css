@@ -430,7 +430,7 @@ body{
   }
   
   .product-card h4 {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 32px;
     color: #7a87a3;
   }
@@ -567,16 +567,16 @@ body{
     display: flex;
     list-style: none;
     gap: 2rem;
-    padding: 30px;
-    color:#7a88a3 ;
-    font-weight: 700;
+    padding: 18px;
+    color: #7a88a3;
+    font-weight: 600;
 
 }
 .review-2{
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     padding: 15px;
     color: #7a88a3;
     font-size: small;
@@ -620,7 +620,7 @@ body{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 91px;
+    top: 106px;
   }
   .vl1 {
     border-left: 2px solid #cbd1dd;
@@ -628,7 +628,7 @@ body{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 146px;
+    top: 167px;
   }
   .vl2{
     border-left: 2px solid #cbd1dd;
@@ -636,7 +636,7 @@ body{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 201px;
+    top: 230px;
   }
   .vl3{
     border-left: 2px solid #cbd1dd;
@@ -644,7 +644,7 @@ body{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 256px;
+    top: 292px;
   }
   .vl4{
     border-left: 2px solid #cbd1dd;
@@ -652,15 +652,15 @@ body{
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 312px;
+    top: 354px;
   }
   .vl5{
     border-left: 2px solid #cbd1dd;
-    height: 24px;
+    height: 34px;
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 367px;
+    top: 416px;
   }
   .display-right1{
     display: flex;
@@ -670,7 +670,7 @@ body{
   .new-category{
     font-size: 13px;
     font-weight: 700;
-    line-height: 1rem;
+    line-height: 17px;
     color: #8491ab;
   }
 /* ======================== Right Side Menu End ============================ */
