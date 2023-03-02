@@ -374,7 +374,7 @@ body{
 .fafa-item3{
     display: flex;
     flex-direction: row;
-    margin-left: 16rem;
+    margin-left: 12rem;
     border-radius: 30px;
     padding: 12px;
     color: #ffffff;
@@ -398,6 +398,16 @@ body{
     cursor: pointer;
     
 }
+.option-filter{
+    border: none;
+}
+/* ============ SearchBar Created ================================ */
+
+
+
+/* ============ SearchBar Created ================================ */
+
+
 /*============================ Product Navbar-2 End ======================================*/
 
 /*====================== All Categories Product Start =====================================*/

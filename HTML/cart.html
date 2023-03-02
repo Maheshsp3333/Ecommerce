@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/CSS/cart.css" />
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <section id="cart-container" class="container my-5">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Total</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><i class="fas fa-trash-alt"></i></a>
+            </td>
+            <td><img src="/Images/product002.png" alt="" /></td>
+            <td>
+              <h5>Apple Air Pods</h5>
+            </td>
+            <td><h5>$600</h5></td>
+            <td><input class="w-25 pl-1" type="number" /></td>
+            <td><h5>$130.00</h5></td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="#"><i class="fas fa-trash-alt"></i></a>
+            </td>
+            <td><img src="/Images/product003.png" alt="" /></td>
+            <td>
+              <h5>Apple Air Pods</h5>
+            </td>
+            <td><h5>$600</h5></td>
+            <td><input class="w-25 pl-1" type="number" /></td>
+            <td><h5>$130.00</h5></td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="#"><i class="fas fa-trash-alt"></i></a>
+            </td>
+            <td><img src="/Images/product005.png" alt="" /></td>
+            <td>
+              <h5>Apple Air Pods</h5>
+            </td>
+            <td><h5>$600</h5></td>
+            <td><input class="w-25 pl-1" type="number" /></td>
+            <td><h5>$130.00</h5></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-bottom" class="container">
+        <div class="row">
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                <div>
+                    <h5>coupon</h5>
+                    <p>Enter Your Coupon Code Here.</p>
+                    <input type="text" placeholder="coupon code">
+                    <button>Apply Coupon</button>
+                </div>
+            </div>
+        </div>
+       
+            <div class="total col-lg-6 col-md-6 col-12">
+                <div>
+                    <h5>CART TOTAL</h5>
+                    <div class="d-flex justify-content-between">
+                        <h6>Subtotal</h6>
+                        <p>$215.00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Shipping</h6>
+                        <p>$215.00</p>
+                    </div>
+                    <hr class="second-hr">
+                    <div class="d-flex justify-content-between">
+                        <h6>Total</h6>
+                        <p>$215.00</p>
+                    </div>
+                   <button>Proceed To Checkout</button>
+                </div>
+            </div>
+        
+
+    </section>
+
+    <script src="/JS/shop.js"></script>
+  </body>
+</html>
