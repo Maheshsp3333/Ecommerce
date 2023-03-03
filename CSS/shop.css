@@ -403,7 +403,83 @@ body{
 }
 /* ============ SearchBar Created ================================ */
 
-
+.openBtn {
+    background: #f1f1f1;
+    border: none;
+    padding: 0px 4px;
+    font-size: 14px;
+    /* color: #8091b5; */
+    cursor: pointer;
+  }
+  
+  /* .openBtn:hover {
+    background: #bbb;
+  } */
+  
+  .overlay {
+    height: 51%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 16px;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  .overlay input[type=text] {
+    padding: 15px 17px;
+    font-size: 17px;
+    border-radius: 30px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+    border: none;
+  }
+  
+  .overlay button {
+    float: left;
+    width: 8%;
+    border-radius: 30px;
+    margin-left: 25px;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+  
 
 /* ============ SearchBar Created ================================ */
 

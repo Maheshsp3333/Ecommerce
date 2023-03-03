@@ -168,10 +168,10 @@
             <div class="navbar-div2">
                 <ul class="nav-bar2">
                     
-                  <li class="fa-regular fa-circle-check fa-lg" style="padding-left: 2.3rem;">
-                   <h4 class="select-all-mobile" style="color: #546485; padding-left: 1.5rem;">Select All</h4>
+                 <li id="select-all-checkbox" onclick="selectAll()"  class="fa-regular fa-circle-check fa-lg" style=" cursor: pointer;padding-left: 2.3rem;">
+                   <h4 class="select-all-mobile" style=" color: #546485; padding-left: 1.5rem;">Select All</h4>
                   </li>
-                  <input type="checkbox" id="check" />
+                  
                   <span class="menu2">
                     <table>
                     <tr>
@@ -186,13 +186,14 @@
                           <option value="iPad">iPad</option>
                           
                         </select></li>
-                       <li ><i class="fa fa-search" aria-hidden="true"></i><div id="myOverlay" class="overlay">
+                       <li ><button  class="openBtn" onclick="openSearch()"><i class="fa fa-search" aria-hidden="true" style="color: #8091b5; padding-right: 6px;"></i>Search</button>
+                        <div id="myOverlay" class="overlay">
                         <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                         <div class="overlay-content">
-                          <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                          </form>
+                         
+                            <input type="text" placeholder="Search.." id="search-input">
+                            <button type="submit" onclick="search()"><i class="fa fa-search"></i></button>
+                          
                         </div>
                       </div></li>
                         <li class="fa-solid fa-pen"><button>Edit</button></li>
@@ -217,7 +218,7 @@
           <div class="product-card" data-category="electronics" data-name="Apple Air Pods" data-price="800">
             <div class="container">
               <div class="round">
-                <input type="checkbox" checked id="checkbox1" />
+                <input type="checkbox" checked class="checkbox-item" id="checkbox1" />
                 <label for="checkbox1"></label>
               </div>
             </div>
@@ -228,7 +229,7 @@
           <div class="product-card" data-category="Watch" data-name="Samsung Smart Watch" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox"  id="checkbox2" />
+                <input type="checkbox" class="checkbox-item"  id="checkbox2" />
                 <label for="checkbox2"></label>
               </div>
             </div>
@@ -240,7 +241,7 @@
           <div class="product-card" data-category="LED Monitor" data-name="Apple Monitor Pro" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox"  id="checkbox3" />
+                <input type="checkbox" class="checkbox-item"  id="checkbox3" />
                 <label for="checkbox3"></label>
               </div>
             </div>
@@ -251,7 +252,7 @@
           <div class="product-card" data-category="Watch" data-name="Apple Watch Series 4" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox" id="checkbox4" />
+                <input type="checkbox" class="checkbox-item" id="checkbox4" />
                 <label for="checkbox4"></label>
               </div>
             </div>
@@ -356,7 +357,7 @@
         <!------------------------     TABLET SIZE START    --------------------- -->
 
         <div class="row-tab">
-          <div class="product-card">
+          <div class="product-card" data-category="electronics" data-name="Apple Air Ppods 2" data-price="600">
             <div class="container">
               <div class="round">
                 <input type="checkbox" checked id="checkbox13" />
@@ -364,10 +365,10 @@
               </div>
             </div>
             <img src="/Images/product002.png" alt="Product Image">
-            <h4>Apple Air Pods 2</h4>
+            <h4 class="product-name">Apple Air Pods 2</h4>
             <p class="price">$600</p>
           </div>
-          <div class="product-card">
+          <div class="product-card" data-category="Watch" data-name="Samsung Smart Watch" data-price="600">
             <div class="container">
               <div class="round">
                 <input type="checkbox"  id="checkbox14" />
@@ -375,12 +376,12 @@
               </div>
             </div>
             <img src="/Images/product003.png" alt="Product Image">
-            <h4>Samsung Smart Watch</h4>
+            <h4 class="product-name">Samsung Smart Watch</h4>
             <p class="price">$600</p>
           </div>
         </div>
         <div class="row-tab">
-          <div class="product-card">
+          <div class="product-card" data-category="Monitor" data-name="Apple Monitor Pro" data-price="600">
             <div class="container">
               <div class="round">
                 <input type="checkbox"  id="checkbox15" />
@@ -388,10 +389,10 @@
               </div>
             </div>
             <img src="/Images/product004.png" alt="Product Image">
-            <h4>Apple Monitor Pro</h4>
+            <h4 class="product-name">Apple Monitor Pro</h4>
             <p class="price">$600</p>
           </div>
-          <div class="product-card">
+          <div class="product-card" data-category="Watch" data-name="Apple Watch Series 4" data-price="600">
             <div class="container">
               <div class="round">
                 <input type="checkbox" id="checkbox16" />
@@ -399,103 +400,103 @@
               </div>
             </div>
             <img src="/Images/product005.png" alt="Product Image">
-            <h4>Apple Watch Series 4</h4>
+            <h4 class="product-name">Apple Watch Series 4</h4>
             <p class="price">$600</p>
           </div>
         </div>
         <div class="row-tab">
-          <div class="product-card">
+          <div class="product-card" data-category="Mobile" data-name="Google Pixel 4 XL" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox" checked id="checkbox13" />
-                <label for="checkbox13"></label>
+                <input type="checkbox" checked id="checkbox17" />
+                <label for="checkbox17"></label>
               </div>
             </div>
             <img src="/Images/product006.png" alt="Product Image">
-            <h4>Google Pixel 4 XL</h4>
+            <h4 class="product-name">Google Pixel 4 XL</h4>
             <p class="price">$600</p>
           </div>
-          <div class="product-card">
+          <div class="product-card" data-category="Speaker" data-name="Amazon Smart Speaker" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox"  id="checkbox14" />
-                <label for="checkbox14"></label>
+                <input type="checkbox"  id="checkbox18" />
+                <label for="checkbox18"></label>
               </div>
             </div>
             <img src="/Images/product007.png" alt="Product Image">
-            <h4>Amazon Smart Speaker</h4>
+            <h4 class="product-name">Amazon Smart Speaker</h4>
             <p class="price">$600</p>
           </div>
         </div>
         <div class="row-tab">
-          <div class="product-card">
+          <div class="product-card" data-category="Laptop" data-name="Apple Macbook Pro 16" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox"  id="checkbox15" />
-                <label for="checkbox15"></label>
+                <input type="checkbox"  id="checkbox19" />
+                <label for="checkbox19"></label>
               </div>
             </div>
             <img src="/Images/product008.png" alt="Product Image">
-            <h4>Apple MacBook Pro 16</h4>
+            <h4 class="product-name">Apple MacBook Pro 16</h4>
             <p class="price">$600</p>
           </div>
-          <div class="product-card">
+          <div class="product-card" data-category="iPad" data-name="Apple iPad 10.2" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox" id="checkbox16" />
-                <label for="checkbox16"></label>
+                <input type="checkbox" id="checkbox20" />
+                <label for="checkbox20"></label>
               </div>
             </div>
             <img src="/Images/product009.png" alt="Product Image">
-            <h4>Apple iPad 10.2</h4>
+            <h4 class="product-name">Apple iPad 10.2</h4>
             <p class="price">$600</p>
           </div>
         </div>
         <div class="row-tab">
-          <div class="product-card">
+          <div class="product-card" data-category="Laptop" data-name="Microsoft Surface Book" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox" checked id="checkbox13" />
-                <label for="checkbox13"></label>
+                <input type="checkbox" id="checkbox21" />
+                <label for="checkbox21"></label>
               </div>
             </div>
             <img src="/Images/product010.png" alt="Product Image">
-            <h4>Microsoft Surface Book</h4>
+            <h4 class="product-name">Microsoft Surface Book</h4>
             <p class="price">$600</p>
           </div>
-          <div class="product-card">
+          <div class="product-card" data-category="Watch" data-name="Google Nest" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox"  id="checkbox14" />
-                <label for="checkbox14"></label>
+                <input type="checkbox"  id="checkbox22" />
+                <label for="checkbox22"></label>
               </div>
             </div>
             <img src="/Images/product011.png" alt="Product Image">
-            <h4>Google Nest</h4>
+            <h4 class="product-name">Google Nest</h4>
             <p class="price">$600</p>
           </div>
         </div>
         <div class="row-tab">
-          <div class="product-card">
+          <div class="product-card" data-category="Monitor" data-name="Apple iMac Pro" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox"  id="checkbox15" />
-                <label for="checkbox15"></label>
+                <input type="checkbox"  id="checkbox23" />
+                <label for="checkbox23"></label>
               </div>
             </div>
             <img src="/Images/product012.png" alt="Product Image">
-            <h4>Apple iMac Pro</h4>
+            <h4 class="product-name">Apple iMac Pro</h4>
             <p class="price">$600</p>
           </div>
-          <div class="product-card">
+          <div class="product-card" data-category="Watch" data-name="Samsung Smart Watch" data-price="600">
             <div class="container">
               <div class="round">
-                <input type="checkbox" id="checkbox16" />
-                <label for="checkbox16"></label>
+                <input type="checkbox" id="checkbox24" />
+                <label for="checkbox24"></label>
               </div>
             </div>
             <img src="/Images/product013.png" alt="Product Image">
-            <h4>Samsung Smart Watch</h4>
+            <h4 class="product-name">Samsung Smart Watch</h4>
             <p class="price">$600</p>
           </div>
         </div>
