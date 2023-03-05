@@ -41,7 +41,7 @@ function deleteSelectedProducts() {
    // ==============  Filter Products From List ===================== //
 
    let categoryFilter = document.querySelector('#category-filter');
-categoryFilter.addEventListener('change', filterProducts);
+categoryFilter.addEventListener('click', filterProducts);
 
 function filterProducts() {
   // Get the selected option element and its value
@@ -116,3 +116,46 @@ function selectAll() {
   }
 }
 
+// ===================== Update Product Details =====================//
+
+// let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+// checkboxes.addEventListener('click', updateProductDetails);
+
+// function updateProductDetails() {
+  
+//   // Get the product details elements
+//   let productName = prompt("Edit Product Name");
+//   let productPrice = prompt("Edit Product Price");
+//   if (productName != null && productPrice !=null) {
+//     document.getElementById("product-edit").innerHTML = productName;
+//     document.getElementById("price-edit").innerHTML = productPrice;
+//   }
+//   console.log("hello");
+// }
+
+let editButton = document.getElementById('edit-button');
+editButton.addEventListener('click', deleteSelectedProducts);
+
+function deleteSelectedProducts() {
+  // Get all the checkbox input elements
+  let checkboxes = document.querySelectorAll('#product-list .checkbox-item');
+  
+
+  // Loop through the checkboxes to find the checked ones
+  for (let i = 0; i < checkboxes.length; i++) {
+    let checkbox = checkboxes[i];
+    if (checkbox.checked) {
+      console.log(checkbox.closest('.product-card').children[2].innerHTML);
+     
+      let productName = prompt("Edit Product Name");
+  let productPrice = prompt("Edit Product Price");
+  if (productName != null && productPrice !=null) {
+    checkbox.closest('.product-card').children[2].innerHTML = productName;
+    checkbox.closest('.product-card').children[3].innerHTML = productPrice;
+  }
+      // Get the parent div element and delete it
+      // let productDiv = checkbox.closest('.product-card');
+      // productDiv.remove();
+    }
+  }
+}
