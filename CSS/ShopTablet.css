@@ -307,7 +307,7 @@
         transform: translateY(-50%);
     }
     .Add-product-font{
-        font-size: 1rem;
+        font-size: 12px;
          padding-left: 0.5rem;
     }
 
@@ -482,5 +482,22 @@
 
     .more-item-btn {
         display: flex;
+    }
+    /* =============== cart div popup ============================== */
+    .cart.active {
+        right: 15px;
+        position: absolute;
+        z-index: 1;
+    }
+    .cart {
+        position: fixed;
+        top: 342px;
+        right: -100%;
+        width: 40%;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #7a87a3;
+        box-shadow: -2px 0 4px hsl(0deg 4% 15% / 10%);
+        transition: 0.3s;
     }
 }
