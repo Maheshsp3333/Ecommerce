@@ -255,7 +255,7 @@ body{
 }
 .section3-container{
     margin-top: 4rem;
-    padding-inline: 2rem;
+    padding-inline: 4rem;
 
 }
 /* .navbar-div1{
@@ -635,6 +635,9 @@ body{
     font-weight: bold;
     color: #92a1bf;
     margin-bottom: 10px;
+  }
+  #edit-button-tab{
+    display: none;
   }
   
   

@@ -123,16 +123,44 @@ function editSelectedProducts() {
   let checkboxes = document.querySelectorAll(
     '#product-list input[type="checkbox"]'
   );
+ 
 
   // Loop through the checkboxes to find the checked ones
   for (let i = 0; i < checkboxes.length; i++) {
     let checkbox = checkboxes[i];
+    console.log(checkbox)
     if (checkbox.checked) {
       let productName = prompt("Edit Product Name");
       let productPrice = prompt("Edit Product Price");
       if (productName != null && productPrice != null) {
         checkbox.closest(".product-card").children[2].innerHTML = productName;
         checkbox.closest(".product-card").children[3].innerHTML =
+          "$" + productPrice;
+      }
+    }
+  }
+}
+
+let editButton_tab = document.getElementById("edit-button-tab");
+editButton_tab.addEventListener("click", editSelectedProducts_tab);
+
+function editSelectedProducts_tab() {
+  // Get all the checkbox input elements
+  let checkboxes = document.querySelectorAll(
+    '#product-list input[type="checkbox"]'
+  );
+ 
+
+  // Loop through the checkboxes to find the checked ones
+  for (let i = 0; i < checkboxes.length; i++) {
+    let checkbox = checkboxes[i];
+    console.log(checkbox)
+    if (checkbox.checked) {
+      let productName = prompt("Edit Product Name");
+      let productPrice = prompt("Edit Product Price");
+      if (productName != null && productPrice != null) {
+        checkbox.closest(".product-card-tab").children[2].innerHTML = productName;
+        checkbox.closest(".product-card-tab").children[3].innerHTML =
           "$" + productPrice;
       }
     }
