@@ -402,7 +402,7 @@
 } */
 
 .overlay {
-  height: 51%;
+  height: 45%;
   width: 100%;
   display: none;
   position: fixed;
@@ -423,8 +423,8 @@
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: -15px;
+  right: 13px;
   font-size: 60px;
   cursor: pointer;
   color: white;
@@ -440,7 +440,7 @@
   border-radius: 30px;
   border: none;
   float: left;
-  width: 80%;
+  width: 72%;
   background: white;
 }
 
@@ -463,6 +463,11 @@
 
 .overlay button:hover {
   background: #bbb;
+}
+#select-all-checkbox{
+  cursor: pointer;
+  padding-left: 1px;
+  padding-right: 2rem;
 }
 /* =============================== Searchbar End ==================================== */
 
@@ -497,6 +502,16 @@
     border:1px solid #edeff2;
     padding: 8px;
   }
+  .option-filter {
+    border: none;
+    width: 60%;
+}
+.edit-class{
+  padding: 4px;
+}
+.filter-padding-left{
+  padding-left: 4px;
+}
 .menu2 li a {
     display: inline-block;
     text-decoration: none;
@@ -553,7 +568,7 @@
     color: #8091b5;
 }
 .fafa-item3{
-    display: none;
+    display: ;
     flex-direction: row;
     margin-left: 1rem;
     border-radius: 30px;
@@ -573,12 +588,16 @@
     cursor: pointer;
 }
 .menu2 li button{
-    background-color: #ffffff;
-    border: none;
-    display: none;
-    padding-left: 8px;
-    cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  padding-left: 18px;
+  width: 19%;
+  border-radius: 50%;
+  cursor: pointer;
     
+}
+.nav2-innertext-hidden{
+  display: none;
 }
 
 .Add-product-font{

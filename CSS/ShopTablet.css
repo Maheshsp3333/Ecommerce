@@ -357,6 +357,10 @@
         cursor: pointer;
 
     }
+    #select-all-checkbox{
+        cursor: pointer;
+        padding-left: 2.3rem;
+      }
 
     /* ----------Section 4 ------------------------------ */
 
@@ -409,9 +413,7 @@
         color: #92a1bf;
         margin-bottom: 10px;
     }
-    #edit-button{
-        display: none;
-     }
+    
 
     /* --------------------------------------------------------------------- */
 
@@ -459,17 +461,32 @@
     }
 
     .row-card {
-        display: none;
+        display: grid;
+        grid: 24rem / auto auto;
         flex-direction: row;
         gap: 1rem;
     }
 
-    .row-tab {
+    /* .row-tab {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+    } */
+    .product-card {
+        width: 100%;
+        padding: 4px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: #fafbfc;
+        border-radius: 12px;
+        position: relative;
     }
-
+    .product-card img {
+        /* width: 70%; */
+        /* max-width: 250px; */
+        padding: 24px 8px;
+        margin-bottom: 20px;
+    }
     .more-item-btn button {
         padding: 12px;
         background-color: #ffffff;

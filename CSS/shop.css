@@ -185,18 +185,20 @@ body{
     margin-left: 0.5rem;
  }
  .btn-buy{
-    display: flex;
-    margin: 1.5rem auto 0 auto;
-    padding: 12px 20px;
-    border: none;
-    background: var(--main-color);
-    color: var(--bg-color);
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: aqua;
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: transform .5s;
  }
  .btn-buy:hover{
-    background: var(--text-color);
+  transform: scale(1.2); 
 
  }
  #close-cart{
@@ -500,7 +502,17 @@ body{
     
 }
 .option-filter{
-    border: none;
+  border: none;
+  width: 70%;
+  margin-right: -72px;
+    
+}
+.option-filter::content{
+  display: none;
+}
+#select-all-checkbox{
+  cursor: pointer;
+  padding-left: 2.3rem;
 }
 /* ============ SearchBar Created ================================ */
 
@@ -612,7 +624,7 @@ body{
   .product-card img {
     /* width: 70%; */
     /* max-width: 250px; */
-    padding: 1rem;
+    padding: 24px 8px;
     margin-bottom: 20px;
   }
   
@@ -1075,15 +1087,16 @@ and (max-device-width : 1024px)
   margin: 1.5rem auto 0 auto;
   padding: 12px 20px;
   border: none;
-  background: var(--main-color);
+  background: aqua;
   color: var(--bg-color);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 800;
   cursor: pointer;
-}
-.btn-buy:hover{
-  background: var(--text-color);
-
+  border-radius: 12px;
+  transition: transform .5s;
+ }
+ .btn-buy:hover{
+  transform: scale(1.2); 
 }
 #close-cart{
   position: absolute;

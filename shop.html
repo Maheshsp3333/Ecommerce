@@ -179,6 +179,7 @@
                             <a href="#">Active</a>
                             <a href="#">Draft</a>
                             <a href="#">Assembly</a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping circle1" id="cart-icon"></i></a>
                            
                           </div>
                         </div>
@@ -199,15 +200,15 @@
             <div class="navbar-div2">
                 <ul class="nav-bar2">
                     
-                 <li id="select-all-checkbox" onclick="selectAll()"  class="fa-regular fa-circle-check fa-lg" style=" cursor: pointer;padding-left: 2.3rem;">
+                 <li id="select-all-checkbox" onclick="selectAll()"  class="fa-regular fa-circle-check fa-lg">
                    <h4 class="select-all-mobile" style=" color: #546485; padding-left: 1.5rem;">Select All</h4>
                   </li>
                   
                   <span class="menu2">
                     <table>
                     <tr>
-                        <li class="fa fa-filter" aria-hidden="true" ><select id="category-filter" class="option-filter">
-                          <option  value="">All Category</option>
+                        <li class="fa fa-filter filter-padding-left" aria-hidden="true" ><select id="category-filter" class="option-filter">
+                          <option  value="" class="nav2-innertext-hidden"></option>
                           <option value="electronics">Electronics</option>
                           <option value="Watch">Watches</option>
                           <option value="LED Monitor">Monitors</option>
@@ -217,7 +218,7 @@
                           <option value="iPad">iPad</option>
                           
                         </select></li>
-                       <li ><button  class="openBtn" onclick="openSearch()"><i class="fa fa-search" aria-hidden="true" style="color: #8091b5; padding-right: 6px;"></i>Search</button>
+                       <li ><button  class="openBtn" onclick="openSearch()"><i class="fa fa-search" aria-hidden="true" style="color: #8091b5; padding-right: 6px;"></i><span class="nav2-innertext-hidden">Search</span></button>
                         <div id="myOverlay" class="overlay">
                         <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
                         <div class="overlay-content">
@@ -227,9 +228,8 @@
                           
                         </div>
                       </div></li>
-                        <li class="fa-solid fa-pen edit-button2" id="edit-button"><button >Edit</button></li>
-                        <li class="fa-solid fa-pen edit-button-tab2" id="edit-button-tab"><button >Edit</button></li>
-                        <li class="fa-sharp fa-solid fa-trash"><button id="delete-button">Delete</button></li>
+                        <li class="edit-class" id="edit-button"><i class="fa-solid fa-pen"></i><button class="nav2-innertext-hidden">Edit</button></li>
+                        <li class="edit-class" id="delete-button"><i class="fa-sharp fa-solid fa-trash"></i><button class="nav2-innertext-hidden"> Delete</button></li>
                       </tr>
                     </table>
                     <div class="fafa-item3">
