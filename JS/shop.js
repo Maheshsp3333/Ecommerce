@@ -145,11 +145,15 @@ function editSelectedProducts() {
 // =============== Add Product To The Cart ==========================//
 
 let cartIcon = document.querySelector("#cart-icon");
+let cartIcon1 = document.querySelector("#cart-icon1");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
 
 // open cart
 cartIcon.onclick = () => {
+  cart.classList.add("active");
+};
+cartIcon1.onclick = () => {
   cart.classList.add("active");
 };
 

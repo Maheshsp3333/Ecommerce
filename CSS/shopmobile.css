@@ -469,6 +469,107 @@
   padding-left: 1px;
   padding-right: 2rem;
 }
+
+/* ============================= Cart Added ========================================== */
+.cart{
+  position: fixed;
+  top: 120px;
+  right: -100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #7a87a3;
+  box-shadow: -2px 0 4px hsl(0deg 4% 15% / 10%);
+  transition: 0.3s;
+
+}
+.cart.active{
+  right: 0px;
+  position: absolute;
+  z-index: 1;
+}
+.cart-title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.cart-box{
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cart-img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+.detail-box{
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cart-product-title{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+}
+.cart-price{
+  font-weight: 500;
+}
+.cart-quantity{
+  border: 1px solid var(--text-color);
+  outline-color: var(--main-color);
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-remove{
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.total{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--text-color);
+}
+.total-title{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.total-price{
+  margin-left: 0.5rem;
+}
+.btn-buy{
+display: flex;
+margin: 1.5rem auto 0 auto;
+padding: 12px 20px;
+border: none;
+background: aqua;
+color: var(--bg-color);
+font-size: 1rem;
+font-weight: 800;
+cursor: pointer;
+border-radius: 12px;
+transition: transform .5s;
+}
+.btn-buy:hover{
+transform: scale(1.2); 
+
+}
+#close-cart{
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+/* ============================= Cart Added End ===================================== */
 /* =============================== Searchbar End ==================================== */
 
 .nav-bar2 {
@@ -568,7 +669,7 @@
     color: #8091b5;
 }
 .fafa-item3{
-    display: ;
+    
     flex-direction: row;
     margin-left: 1rem;
     border-radius: 30px;
@@ -590,11 +691,14 @@
 .menu2 li button{
   background-color: #ffffff;
   border: none;
-  padding-left: 18px;
+  padding-left: 4px;
   width: 19%;
   border-radius: 50%;
   cursor: pointer;
     
+}
+.option-filter .filter-mobile{
+  display: none;
 }
 .nav2-innertext-hidden{
   display: none;

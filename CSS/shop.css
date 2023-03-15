@@ -503,8 +503,8 @@ body{
 }
 .option-filter{
   border: none;
-  width: 70%;
-  margin-right: -72px;
+  width: 85%;
+  margin-right: -33px;
     
 }
 .option-filter::content{
