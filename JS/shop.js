@@ -220,13 +220,13 @@ function addSelectedProducts() {
       let pricename = checkbox.closest(".product-card").children[3].innerHTML;
       let productimg = checkbox.closest(".product-card").children[1].src;
 
-      // var cart = document.getElementsByClassName(".cart-content")|| [];
+      // var cart = document.getElementsByClassName(".cart-content") || [];
       // var isProductInCart = false;
       // for (var i = 0; i < cart.length; i++) {
       //   if (
-      //     cart[i].name === pname &&
-      //     cart[i].price === pricename &&
-      //     cart[i].image === productimg
+      //     cart[i].pname === pname &&
+      //     cart[i].pricename === pricename &&
+      //     cart[i].productimg === productimg
       //   ) {
       //     isProductInCart = true;
       //     break;
