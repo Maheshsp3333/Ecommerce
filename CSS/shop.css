@@ -498,6 +498,7 @@ body{
     background-color: #ffffff;
     border: none;
     padding-left: 8px;
+    margin-top: -20px;
     cursor: pointer;
     
 }
@@ -530,12 +531,12 @@ body{
   } */
   
   .overlay {
-    height: 51%;
+    height: 28%;
     width: 100%;
     display: none;
     position: fixed;
     z-index: 1;
-    top: 16px;
+    top: -10px;
     left: 0;
     background-color: rgba(0,0,0, 0.9);
   }
@@ -566,6 +567,7 @@ body{
     padding: 15px 17px;
     font-size: 17px;
     border-radius: 30px;
+    margin-top: -19px;
     border: none;
     float: left;
     width: 80%;

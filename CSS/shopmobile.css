@@ -402,7 +402,7 @@
 } */
 
 .overlay {
-  height: 45%;
+  height: 30%;
   width: 100%;
   display: none;
   position: fixed;
@@ -436,12 +436,14 @@
 
 .overlay input[type=text] {
   padding: 15px 17px;
-  font-size: 17px;
-  border-radius: 30px;
-  border: none;
-  float: left;
-  width: 72%;
-  background: white;
+    font-size: 17px;
+    margin-top: -26px;
+    border-radius: 30px;
+    border: none;
+    float: left;
+    height: 13vh;
+    width: 56%;
+    background: white;
 }
 
 .overlay input[type=text]:hover {
@@ -691,8 +693,9 @@ transform: scale(1.2);
 .menu2 li button{
   background-color: #ffffff;
   border: none;
-  padding-left: 4px;
-  width: 19%;
+  padding-left: 14px;
+  width: 21%;
+  margin-top: -31px;
   border-radius: 50%;
   cursor: pointer;
     
